@@ -1,0 +1,41 @@
+.products {
+    background: linear-gradient(90deg, var(--pink) 0%, var(--lilac) 100%);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    
+    &-main {
+        display: flex;
+        align-items: flex-start; 
+        margin-top: 2rem;
+    }
+
+    &-sidebar {
+        width: 25%;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        padding: 1.5rem;
+        height: 70vh;
+    
+
+        &-link-one {
+            color: var(--blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        &-link-two {
+            color: var(--blue);
+            font-weight: 400;
+            margin-left: 1rem;
+            line-height: 0.5rem;
+
+            &:hover {
+                color: var(--lilac);
+                cursor: pointer;
+            }
+        }
+    }
+}
